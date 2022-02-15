@@ -1,0 +1,96 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+.grid-container     {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+
+    grid-template-areas: 
+    "first first first"
+    "first first first"
+    "opciones opciones opciones"
+    "opciones opciones opciones"
+    "opciones opciones opciones"
+    "historia historia historia"
+    "medios medios medios";
+
+}
+
+.first-item     {
+    grid-area: first;
+}
+
+.seccion-opciones   {
+    grid-area: opciones;
+}
+
+.seccion-historia   {
+    grid-area: historia;
+}
+
+.seccion-medios     {
+    grid-area: medios;
+}
+
+img     {
+    width: 300px;
+   
+    
+    }
+
+.opciones           {
+    width: 100px;
+}
+    
+.especialidad   {
+    width: 300px;
+    
+}
+
+h1 	{
+    font-family: 'Roboto', sans-serif;
+    margin: 50px;
+
+    
+}
+
+body    {
+    background-color: bisque;
+    background-image:url(../Images/cafe-1169900.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;   
+    color: antiquewhite;
+    
+}
+
+header     {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul   {
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-right: 150px;
+    flex-wrap: wrap-reverse;
+}
+
+li  {
+    justify-content: space-between;
+}
+
+footer     {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
